@@ -2,7 +2,7 @@ import { useTimer } from "react-timer-hook";
 import moment from "moment-timezone";
 
 function Timer() {
-  const targetTimeIST = moment.tz("2025-05-01 03:51", "Asia/Kolkata");
+  const targetTimeIST = moment.tz("2026-01-01 00:00", "Asia/Kolkata");
   const targetTimeUTC = targetTimeIST.clone().utc().toDate();
   const { seconds, minutes, hours, days, isRunning } = useTimer({
     expiryTimestamp: targetTimeUTC,
